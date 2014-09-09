@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div#rad {
+	position: relative;
+   top: 200px;
+}
+div.wheel {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    webkit-box-shadow:8px 8px 300px 10px #FFF;
+    background: red;
+    -webkit-animation: myfirst 90s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-play-state: running;
+    
+    -moz-animation: myfirst 90s; /* Chrome, Safari, Opera */
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background: red; -webkit-transform:rotate(0deg); height:10px; width:1px;}
+    25%  {background: blue; width: 10px; height: 100px;}
+    50%  {background: red; -webkit-transform:rotate(360deg); width: 100px; height: 10px;}
+    75%  {-webkit-transform:rotate(720deg); background: green;}
+    80%  {background: yellow; }
+    100% {-webkit-transform:rotate(1440deg); height:10px; width:1px; }
+}
+
+@-moz-keyframes myfirst {
+    0%   {background: red; -moz-transform: rotate(0deg); height:10px; width:1px;}
+    25%  {background: blue; width: 10px; height: 100px;}
+    50%  {background: red; -moz-transform: rotate(360deg); width: 100px; height: 10px;}
+    75%  {-moz-transform: rotate(720deg); background: green;}
+    80%  {background: yellow; }
+    100% {-moz-transform: rotate(1440deg); height:10px; width:1px; }
+}
+</style>
+</head>
+<body style=" overflow:hidden">
+
+<div id="rad" align="center">
+<div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel"><div class="wheel">
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+
+</body>
+</html>
